@@ -63,9 +63,9 @@ func stop() {
 
 //export run
 func run(t int64) {
-  for keepRunning {
-    time.Sleep(time.Duration(t))
-  }
+  //for keepRunning {
+  //  time.Sleep(time.Duration(t))
+  //}
 }
 
 // main function is required, don't know why!
