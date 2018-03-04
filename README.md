@@ -1,7 +1,7 @@
 OPA embedded in JVM
 ===
 
-Running ```docker-compose up``` up will
+Running ```docker-compose up``` will
 
 - build a docker image
 - run the docker image
