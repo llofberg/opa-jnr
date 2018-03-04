@@ -21,9 +21,9 @@ public class OpaJnr {
   private static String input2 = "{\"identity\": \"bob\", \"method\":   \"POST\"}";
 
   public static void main(String[] args) throws InterruptedException {
-    OpaRunner mathLibRunner = new OpaRunner(SLEEP_SECONDS);
-    OpaLib opaLib = mathLibRunner.getOpaLib();
-    Thread thread = new Thread(mathLibRunner);
+    OpaRunner opaRunner = new OpaRunner(SLEEP_SECONDS);
+    OpaLib opaLib = opaRunner.getOpaLib();
+    Thread thread = new Thread(opaRunner);
     thread.start();
     out.println("Compiling");
     opaLib.compile(module, filename);
