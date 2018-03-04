@@ -1,0 +1,11 @@
+version: "2"
+services:
+
+  opa_java_test:
+    build: docker
+    image: opa_java_test
+    environment:
+      LD_LIBRARY_PATH: /go/src/lbg.com/open-policy-agent/
+    command: /go/src/lbg.com/open-policy-agent/docker/build.sh
+    volumes:
+      - $GOROOT:/go
