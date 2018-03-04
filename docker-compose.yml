@@ -5,7 +5,7 @@ services:
     build: docker
     image: opa_java_test
     environment:
-      LD_LIBRARY_PATH: /go/src/lbg.com/open-policy-agent/
-    command: /go/src/lbg.com/open-policy-agent/docker/build.sh
+      LD_LIBRARY_PATH: /go/src/github.com/llofberg/opa-jnr/
+    command: /go/src/github.com/llofberg/opa-jnr/docker/build.sh
     volumes:
       - $GOROOT:/go
