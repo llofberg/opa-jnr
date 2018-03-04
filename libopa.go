@@ -9,7 +9,6 @@ import (
   "encoding/json"
 )
 
-var keepRunning = true
 var compiler = ast.NewCompiler()
 
 //export compile
@@ -54,18 +53,6 @@ func query(q *C.char, i *C.char) bool {
   }
 
   return rs[0].Expressions[0].Value == true
-}
-
-//export stop
-func stop() {
-  keepRunning = false
-}
-
-//export run
-func run(t int64) {
-  //for keepRunning {
-  //  time.Sleep(time.Duration(t))
-  //}
 }
 
 // main function is required, don't know why!
