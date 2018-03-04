@@ -6,7 +6,7 @@ Running ```docker-compose up``` will
 - build a docker image
 - run the docker image
 - mount $GOROOT to /go in the docker image
-- execute /go/src/com.lbg/open-policy-agent/docker/build.sh
+- execute /go/src/github.com/llofberg/opa-jnr/docker/build.sh
 
 build.sh will
 
